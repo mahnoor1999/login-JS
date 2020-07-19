@@ -1,0 +1,125 @@
+body{
+    font-family: sans-serif;
+    margin: 0px;
+    box-sizing: border-box;
+   
+} 
+/* logo */
+img{
+    height: 50px;
+    margin-bottom: 3px;
+}
+/* first section element */
+.main-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   margin-top: 5em;
+}
+/* second section element */
+
+.login{
+    width: 22.3em;
+    border: #dcdcde 1px solid;
+    padding: 3em 1em;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+  
+}
+/* heading section */
+.login>div{
+    text-align: center;
+}
+/* anchor tags */
+a{
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight:bolder ;
+    color: #1a73e9;
+    text-align: left;
+}
+/* sign in heading */
+h1{
+    color:#0f253a;
+    font-size: 1.5em;
+    font-weight: lighter;
+    margin: 0px;
+}
+/* use your google account heading */
+h4{
+    margin: 5px;
+    color:#0f253a;
+    font-size: 1em;
+    font-weight: lighter;
+}
+/* input */
+input{
+    border: solid 1px #dbdcde;
+    border-radius: 4px;
+    padding: 10px ;
+    width: 95%; 
+    margin: 10px auto; 
+    font-size: 1em; 
+}
+input:hover{
+    border: 1px solid #1a73e9 ;
+}
+/* buttons */
+button{
+   border: none;
+   padding: 0.8em 2.3em;
+   background-color: #1a73e9;
+   font-size: 0.8em;
+   border-radius: 5px;
+   margin-left: 10em;
+   color: white;
+
+}
+/*  error in span */
+#email-error, #password-error{
+    color: red;
+    font-size: 0.9em;
+}
+
+/* welcome.html */
+.welcome{
+    text-align: center;
+    margin-top: 17em;
+}
+/* for elements outside the form */
+ul{
+    list-style: none;
+    font-size: 13px;
+    display: flex;
+    color: #818a99;
+    border: none;
+    
+ }
+ li{
+    padding: 4px 9px;
+ 
+ }
+ li:active{
+    background-color: #b6b5b5;
+    border: none;
+ }
+ footer{
+    display: flex;
+    justify-content: space-evenly;
+    margin:  3em auto;
+ }
+ 
+ /* languages dropdown */
+ #languages{
+    border: none;
+    color: #6c736c;
+ }
+/* hint */
+.hint{
+    font-size: 0.8em;
+    text-align: center;
+    color: blue;
+}
