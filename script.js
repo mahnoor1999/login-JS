@@ -5,7 +5,6 @@ function email_check() {
     let myEmail = "mahnoor@gmail.com"
     console.log(myEmail);
     if (correctEmail == myEmail) {
-        console.log("hey babes")
         window.location.href = "password.html";
     }
     else {
