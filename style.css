@@ -3,7 +3,6 @@ body {
   margin: 0px auto;
   box-sizing: border-box;
   font-size: 14px;
-  height: 100vh;
 }
 /* logo */
 img {
@@ -15,19 +14,18 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 3.5em;
+  margin-top: 3em;
+  flex-direction: column;
 }
 /* second section element */
 
 .login {
-  width: 25.1em;
   border: #dcdcde 1px solid;
-  padding: 3em 3em;
-  border-radius: 5px;
+  padding: 3em 3em 6em 3em;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
 }
 /* heading section */
 .login > div {
@@ -37,7 +35,7 @@ img {
 a {
   text-decoration: none;
   font-weight: bolder;
-  color: #1a73e9;
+  color: #4886ec;
   text-align: left;
 }
 /* sign in heading */
@@ -55,20 +53,26 @@ h4 {
   font-weight: lighter;
 }
 /* input */
+input[type=email]{
+  width: 95%;
+}
 input {
   border: solid 1px #dbdcde;
   border-radius: 4px;
   padding: 15px 1px 15px 12px;
-  width: 95%;
   margin: 10px auto;
   font-size: 1.2em;
 }
 input:hover {
   border: 1px solid #1a73e9;
 }
+input:focus{
+  border: 1px solid #1a73e9;
+}
 .para {
   color: #5f6368;
-  padding-top: 2.8em;
+  padding-top: 2.2em;
+  padding-bottom: 1em;
 }
 .para a {
   margin-top: 20px !important;
@@ -81,11 +85,16 @@ button {
   border-radius: 5px;
   color: white;
 }
+.last-step{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 /*  error in span */
 #email-error,
 #password-error {
   color: red;
-  font-size: 9px;
+  font-size: 12px;
 }
 
 /* welcome.html */
@@ -107,23 +116,47 @@ li:active {
   background-color: #b6b5b5;
   border: none;
 }
-footer {
+.footer {
   display: flex;
   justify-content: center;
-  margin: 3em auto;
+  margin: 0.8em auto;
+  
 }
-footer select:focus {
+.footer select:focus {
   outline: none;
+}
+.footer ul {
+  display: flex;
 }
 
 /* languages dropdown */
 #languages {
   border: none;
   color: #6c736c;
-  margin-right: 3em;
 }
 /* hint */
 .hint {
   text-align: center;
-  color: blue;
+  color: #2b7ae2;
+}
+input[type=password]{
+  width: 20em;
+  margin-top: 3em;
+}
+input[type=password]+span{
+  margin-bottom: 2em;
+}
+
+
+@media (max-width : 450px){
+.login {
+  padding: 3em 1em 6em 1em;
+}}
+@media (max-width : 380px){
+  .footer ul {
+    display: block;
+  }
+  input[type=password]{
+    width: 17em;
+  }
 }
