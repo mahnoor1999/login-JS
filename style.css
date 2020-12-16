@@ -54,7 +54,7 @@ h4 {
 }
 /* input */
 input[type=email]{
-  width: 95%;
+  width:95%;
 }
 input {
   border: solid 1px #dbdcde;
@@ -77,6 +77,9 @@ input:focus{
 .para a {
   margin-top: 20px !important;
 }
+.learn-more{
+  display: block;
+}
 /* buttons */
 button {
   border: none;
@@ -95,6 +98,7 @@ button {
 #password-error {
   color: red;
   font-size: 12px;
+  display: block;
 }
 
 /* welcome.html */
